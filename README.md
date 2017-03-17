@@ -1,6 +1,6 @@
 # command-series
 
-##usage
+## usage
 
 说话
 
