@@ -1,0 +1,22 @@
+#! /usr/bin/env php
+
+<?php
+
+use Acme\newCommand;
+use Acme\SayHelloCommand;
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+$app = new Application('laracast Demo', '1.0');
+
+$app->add(new SayHelloCommand);
+$app->add(new newCommand(new \GuzzleHttp\Client()));
+
+$app->run();
+
+
+
+
+
+
